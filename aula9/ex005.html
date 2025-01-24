@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 19pt arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a lidar com <strong>DOM</strong> em JavaScript</p>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <p id="imp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores alias quas temporibus. Magnam voluptate veniam laboriosam quod at itaque. Alias autem mollitia debitis cumque odit. Officiis officia soluta fugiat.</p>
+
+    <script>
+        var p1 = document.getElementsByTagName("p")[0]
+        p1.style.color = 'red'
+        var n1 = document.querySelector("p#imp")
+        n1.style.background = "red"
+    </script>
+</body>
+</html>
