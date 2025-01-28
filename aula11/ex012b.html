@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de País</title>
+</head>
+<body>
+    <h1>Selecione seu país</h1>
+    De onde você é? <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="buscar()">
+    <div id="res"></div>
+
+    <script>
+        function buscar() {
+            var res = document.getElementById('res');
+            var pais = document.getElementById("pais").value.trim().toLowerCase(); // Obtem o valor do input e normaliza
+
+            if (pais === "brasil") { // Compara com a string "brasil"
+                res.innerHTML = "Você é Brasileiro!";
+            } else if (pais !== "") {
+                res.innerHTML = "Você é Estrangeiro!";
+            } else {
+                res.innerHTML = "Por favor, digite o nome do seu país.";
+            }
+        }
+    </script>
+</body>
