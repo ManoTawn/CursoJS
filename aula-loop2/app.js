@@ -7,7 +7,7 @@ if (num.value.length == 0) {
         let n = Number(num.value)
         let c = 1
         tab.innerText = ''
-         while(c <= 10) {
+         while(c <= 100) {
             let item = document.createElement("option")
             item.text = `${n} x ${c} = ${n*c}`
             tab.appendChild(item)

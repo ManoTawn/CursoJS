@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: blue;
+    padding: 15px 0px 15px 0px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, blue, green);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: green;
+    border: solid 5px black;
+    height: 400px;
+    width: 300px;
+}
+
+div#tela {
+    background-color: white;
+    margin: 5px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 2px black;
+    
+}
+
+div#botoesop {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+input#botaoop {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+div#botoesn {
+    margin: 10px;
+    display: flex;
+}
+
+input#botaon {
+    height: 70px;
+    width: 70px;
+    
+}
